@@ -2,6 +2,9 @@ import discord
 from discord.ext import commands
 import json
 import os
+from dotenv import load_dotenv  # ✅ Added
+
+load_dotenv()  # ✅ Load variables from .env
 
 # Setup bot with message content intent
 intents = discord.Intents.default()
@@ -46,4 +49,4 @@ async def done(ctx, number: int):
     else:
         await ctx.send("❌ Invalid task number.")
 
-bot.run("DISCORD_BOT_TOKEN")
+bot.run(os.getenv("DISCORD_BOT_TOKEN"))
