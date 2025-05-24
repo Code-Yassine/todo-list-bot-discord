@@ -1,0 +1,49 @@
+2025-05-24 13:14:38,607 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-24 13:14:38,610 - __main__ - INFO - No task file found, starting with empty list
+2025-05-24 13:14:38,619 - discord.client - INFO - logging in using static token
+2025-05-24 13:14:41,054 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d4dcd74453bb01b8753323b10157626c).
+2025-05-24 13:14:43,074 - __main__ - INFO - Logged in as to-doBot (ID: 1371416808355270746)
+2025-05-24 13:14:43,076 - __main__ - INFO - Connected to 1 guilds
+2025-05-24 13:14:44,485 - __main__ - INFO - Synced 4 slash commands
+2025-05-24 13:16:23,042 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 19.7s behind.
+2025-05-24 13:16:57,637 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 13.1s behind.
+2025-05-24 13:18:21,159 - discord.gateway - INFO - Shard ID None has successfully RESUMED session d4dcd74453bb01b8753323b10157626c.
+2025-05-24 13:20:10,598 - discord.app_commands.tree - ERROR - Ignoring exception in command 'list'
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moham\OneDrive\Desktop\discord bots\todo-list\todo-list-bot.py", line 128, in list_tasks
+    await interaction.response.send_message(embed=embed)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'list' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-05-24 13:20:53,523 - __main__ - INFO - Saved 1 tasks to file
+2025-05-24 13:23:20,216 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-24 13:23:20,236 - __main__ - INFO - Loaded 1 tasks from file
+2025-05-24 13:23:20,248 - discord.client - INFO - logging in using static token
+2025-05-24 13:23:22,349 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d73a9e965e78c84d7e9f41f4ba0f50b7).
+2025-05-24 13:23:24,362 - __main__ - INFO - Logged in as to-doBot (ID: 1371416808355270746)
+2025-05-24 13:23:24,364 - __main__ - INFO - Connected to 1 guilds
+2025-05-24 13:23:24,866 - __main__ - INFO - Synced 4 slash commands
+2025-05-24 13:24:07,580 - __main__ - INFO - Saved 2 tasks to file
+2025-05-24 13:24:07,981 - __main__ - INFO - User meta4_999 added task: learn python
+2025-05-24 13:24:16,153 - __main__ - INFO - User meta4_999 viewed their task list
