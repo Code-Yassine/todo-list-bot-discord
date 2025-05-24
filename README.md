@@ -4,10 +4,18 @@ A simple Discord bot to manage a shared to-do list using Python and the `discord
 
 ## ⚙️ Features
 
-- `!add <task>` — Add a new task to the list
-- `!list` — View the current to-do list
-- `!done <task_number>` — Mark a task as completed (removes it)
-- Tasks are saved to a file (`todo.json`) so they persist between restarts
+### 📌 Core Functionality
+- **Add tasks** with `/add <task>`
+- **List all tasks** with `/list`
+- **Complete tasks** with `/done <number>`
+- **Persistent storage** (automatically saves to `todo.json`)
+- **Data backups** (automatic daily backups)
+
+### 🎨 Enhanced Experience
+- Beautiful embed messages
+- Task count tracking
+- Error handling with helpful feedback
+- Slash command support (modern Discord standard)
 
 ## 🚀 Setup
 
@@ -21,7 +29,7 @@ cd todo-list-bot-discord
 ### 2.Install dependencies
 
 ```bash
-pip install discord.py python-dotenv
+pip install discord.py python-dotenv typing-extensions
 ```
 
 ### 3. Add your bot token securely
